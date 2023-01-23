@@ -1,0 +1,105 @@
+* {
+    font-family: 'Michroma', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: url("../imgs/iwantmymtvspaceman.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    height: 85vh;
+    flex-direction: column;   
+   
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+  }
+  
+  main * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex-grid-thirds .col {
+    width 32%;
+  }
+  
+  .flex-ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #gw-result, #gl-result {
+    border: 2vmin solid white;
+    border-radius: 5vmin;
+    width: 100%;
+    padding: 2vmin;
+  }
+  
+    button {
+   float: left;
+    width: 13vmin;
+    margin: 2vmin;
+    background-color: white;
+    color: #685F79;
+    border: 1vmin solid #685F79;
+    border-radius: 4vmin;
+    font-size: 4vmin;
+    outline: none;
+    font-weight: bold; 
+    padding top: 1vmin; 
+    cursor: pointer; 
+    display: inline-block;
+  }
+  
+  button:hover {
+    background-color: #685F79;
+    color: white;
+  }
+
+  h1 {
+    font-size: 5vmin;
+    color: #685F79;
+    font-weight: bold;
+    padding-top: 1vmin;
+    padding-right: 10vmin
+  
+  }
+
+  h2 {
+    font-size: 2.5vmin;
+    color: #67BBBF;
+   
+  }
+
+  lives {
+    text-align: left
+  }
+
+  #spaceman-filmstrip {
+    width: 504px;
+    height: 687px;
+    background-image: url("imgs/spaceman-filmstrip.jpg");
+    background-position-x: 0;
+  }
+  
+.btncontainer {
+    position: fixed;
+  top: 0;
+  width: 500px;
+  margin-top: 0;
+  background: white;
+  padding: 10px;
+  }
