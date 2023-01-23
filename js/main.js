@@ -31,6 +31,7 @@ const btnEls = document.getElementById('letters');
 const catEls = document.getElementById('categories');
 const playAgainBtn = document.getElementById('play-again');
 const commentEl = document.getElementById('comment');
+const spaceImg = document.getElementById('spaceman');
 
 
   /*----- event listeners -----*/
@@ -54,6 +55,7 @@ const commentEl = document.getElementById('comment');
 function render() {
   renderScores();
   renderComments();
+  spaceImg.style.backgroundImage = `url('imgs/spaceman${lives}.jpg')`
 }
 
 function handleGuess(evt) {

@@ -17,16 +17,14 @@ body {
 }
 
     button {
-    width: 13vmin;
-    margin: 2vmin;
+    margin: 3px;
     background-color: white;
     color: #685F79;
     border: 1vmin solid #685F79;
     border-radius: 4vmin;
-    font-size: 4vmin;
+    font-size: 10px;
     outline: none;
     font-weight: bold; 
-    padding-top: 1vmin; 
   }
   
   button:hover {
@@ -45,9 +43,44 @@ body {
     color: #67BBBF;
   }
 
-  #spaceman-filmstrip {
-    width: 504px;
-    height: 687px;
-    background-image: url("imgs/spaceman-filmstrip.jpg");
-    background-position-x: 0;
+  #game-info {
+    height: 20vh;
+    display: flex;
   }
+
+  #game-play {
+    height: 80vh; 
+    display: flex; 
+  }
+
+  #left-side {
+    width: 30vw;
+  }
+
+  #right-side {
+    width: 70vw;
+    display: flex; 
+    flex-direction: column;
+  }
+
+  #letters {
+    width: 30vw;
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #hintsctn {
+    height: 80%;
+  }
+
+  #word {
+    height: 20%;
+  }
+
+   #spaceman { 
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+   }
