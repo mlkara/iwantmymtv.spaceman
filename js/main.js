@@ -24,6 +24,10 @@ let wrongLetters;
 let lives;
 let guesses;
 let win; 
+let answer = '';
+let renderLetters
+let word = null; 
+let hints = '';
 
   /*----- cached elements  -----*/
 const hintEl = document.getElementById('hints');
@@ -32,6 +36,9 @@ const catEls = document.getElementById('categories');
 const playAgainBtn = document.getElementById('play-again');
 const commentEl = document.getElementById('comment');
 const spaceImg = document.getElementById('spaceman');
+const rndWord = document.getElementById('word');
+const checkWinner = document.getElementById('win')
+
 
 
   /*----- event listeners -----*/
@@ -49,6 +56,7 @@ const spaceImg = document.getElementById('spaceman');
     wrongLetters = [ ];
     lives = 6;
     win = null; 
+    randomWord = [ ];
     render()
 };
   
@@ -56,6 +64,7 @@ function render() {
   renderScores();
   renderComments();
   spaceImg.style.backgroundImage = `url('imgs/spaceman${lives}.jpg')`
+  randomWord();
 }
 
 function handleGuess(evt) {
@@ -69,15 +78,18 @@ function handleGuess(evt) {
   render();
 }
 
-function giveHint() {
+function randomWord(categories) {
+  answer = categories[Math.floor(Math.random() * categories.length)];
+  let word = categories[categoriesIdx]
+}                                       
 
+
+function giveHint() { 
+  hints.innerHTML = "Hint: - " = hints [idx];
 };
 
 function renderScores() {
-        // for (let key in scores) {
-        //     const scoreEl = docuemnt.getElementById(`${key}-score`);
-        //     scoreEl.innerText - scores[key];
-        // }
+
     }
 
 function setCategory(evt) {
@@ -85,7 +97,7 @@ function setCategory(evt) {
 }
 
 function checkWinner() {
-        
+  if (guess === answer); 
 }
       
 function renderComments() {
@@ -98,7 +110,3 @@ function renderComments() {
   }
 }
 
-
-     
-    
-  

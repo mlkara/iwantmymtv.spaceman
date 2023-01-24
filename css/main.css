@@ -5,7 +5,7 @@
 }
 
 body {
-    /* background: url("../imgs/iwantmymtvspaceman.png");  */
+    background: url("../imgs/iwantmymtvspaceman.png");  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -78,6 +78,26 @@ body {
 
   #word {
     height: 20%;
+  }
+
+  #hntsbutton {
+    margin: 3px;
+    background-color: white;
+    color: #EFC01D;
+    border: 1vmin solid #EFC01D;
+    border-radius: 4vmin;
+    font-size: 15px;
+    outline: none;
+    font-weight: bold; 
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+  }
+
+  #hntsbutton:hover {
+    background-color: #EFC01D;
+    color: white;
   }
 
    #spaceman { 
