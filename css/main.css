@@ -76,10 +76,6 @@ body {
     height: 80%;
   }
 
-  #word {
-    height: 20%;
-  }
-
   #hntsbutton {
     margin: 3px;
     background-color: white;
@@ -115,7 +111,6 @@ body {
    }
 
    #word {
-    width: 50px;
     font-weight: bold; 
     color: #EFC01D;
     font-size: 50px;

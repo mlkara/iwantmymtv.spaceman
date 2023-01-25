@@ -50,7 +50,7 @@ const hintMessage = document.getElementById('hints')
   btnEls.addEventListener('click', handleGuess);
   hintEl.addEventListener('click', giveHint);
   catEls.addEventListener('click', setCategory);
-  playAgainBtn.addEventListener('click',init);
+  //playAgainBtn.addEventListener('click',init);
   categorySelect.addEventListener('change',init);
 
   /*----- functions -----*/
