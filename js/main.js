@@ -19,7 +19,8 @@ const hints = {
   mixTape: ['coming soon'],
 };
   /*----- state variables -----*/
-let chosenCategory;  
+let chosenCategory; 
+let hint;
 let wrongLetters; 
 let lives;
 let guesses;
@@ -27,17 +28,21 @@ let win;
 let answer = '';
 let renderLetters
 let word = null; 
-let hints = '';
+
+
 
   /*----- cached elements  -----*/
-const hintEl = document.getElementById('hints');
+const hintEl = document.getElementById('hntsbutton');
 const btnEls = document.getElementById('letters');
 const catEls = document.getElementById('categories');
 const playAgainBtn = document.getElementById('play-again');
 const commentEl = document.getElementById('comment');
-const spaceImg = document.getElementById('spaceman');
+const spaceImg = document.querySelector('img');
 const rndWord = document.getElementById('word');
-const checkWinner = document.getElementById('win')
+const categorySelect = document.querySelector('select');
+const guessWord = document.getElementById('word');
+const hintMessage = document.getElementById('hints')
+//const checkWinner = document.getElementById('win')
 
 
 
@@ -46,46 +51,61 @@ const checkWinner = document.getElementById('win')
   hintEl.addEventListener('click', giveHint);
   catEls.addEventListener('click', setCategory);
   playAgainBtn.addEventListener('click',init);
+  categorySelect.addEventListener('change',init);
 
   /*----- functions -----*/
   init();
     
 
-  function init() {
+function init(evt) {
+  //console.log(evt.target.value)
     guesses = [ ];
     wrongLetters = [ ];
     lives = 6;
     win = null; 
-    randomWord = [ ];
+    hintEl.textContent = 'HINT';
+    category = evt ? evt.target.value : 'seventies';
+    categoryIdx =  Math.floor(Math.random() * categories[evt ? evt.target.value : 'seventies'].length)
+    randomWord = categories[category][categoryIdx].split('');
+    hint = hints[category][categoryIdx]
+    console.log(hint)
+    word = randomWord.map(letter => letter === ' ' ? `   ` : ' _ ')
+    console.log(randomWord);
+
     render()
 };
   
 function render() {
   renderScores();
   renderComments();
-  spaceImg.style.backgroundImage = `url('imgs/spaceman${lives}.jpg')`
-  randomWord();
+  spaceImg.src = `imgs/spaceman${lives}.jpg`
+  guessWord.textContent = word.join('');
+ 
 }
 
 function handleGuess(evt) {
   const guess = evt.target.innerHTML.toLowerCase();
-  console.log(guess)
-  if (guesses.includes(guess)) return;
-  guesses.push(guess);
-  lives = lives - 1; 
+  if (evt.target.tagName !== 'BUTTON' || guesses.includes(guess) || word.includes(guess)) return; 
+  if (randomWord.includes(guess)) {
+    randomWord.forEach(function(char, idx){
+      if (char === guess) word[idx] = guess;
+    })
+    console.log('right guess')
+  } else {
+    guesses.push(guess);
+    lives = lives - 1; 
+    console.log('wrong guess')
+  }
   win = checkWinner();
 
   render();
 }
 
-function randomWord(categories) {
-  answer = categories[Math.floor(Math.random() * categories.length)];
-  let word = categories[categoriesIdx]
-}                                       
+                                     
 
 
 function giveHint() { 
-  hints.innerHTML = "Hint: - " = hints [idx];
+ hintEl.textContent = hint;
 };
 
 function renderScores() {
@@ -97,7 +117,7 @@ function setCategory(evt) {
 }
 
 function checkWinner() {
-  if (guess === answer); 
+ 
 }
       
 function renderComments() {
