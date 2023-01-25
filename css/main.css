@@ -115,10 +115,10 @@ body {
    }
 
    #word {
-    width: 50px;
     font-weight: bold; 
     color: #EFC01D;
     font-size: 50px;
+    letter-spacing: <some measurement>;
    }
 
    

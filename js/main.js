@@ -50,28 +50,27 @@ const hintMessage = document.getElementById('hints')
   btnEls.addEventListener('click', handleGuess);
   hintEl.addEventListener('click', giveHint);
   catEls.addEventListener('click', setCategory);
-  playAgainBtn.addEventListener('click',init);
-  categorySelect.addEventListener('change',init);
+  playAgainBtn.addEventListener('click', init);
+  categorySelect.addEventListener('change', init);
 
   /*----- functions -----*/
   init();
     
 
 function init(evt) {
-  //console.log(evt.target.value)
     guesses = [ ];
     wrongLetters = [ ];
     lives = 6;
     win = null; 
     hintEl.textContent = 'HINT';
-    category = evt ? evt.target.value : 'seventies';
-    categoryIdx =  Math.floor(Math.random() * categories[evt ? evt.target.value : 'seventies'].length)
+    category = categorySelect.value || 'seventies';
+    categoryIdx =  Math.floor(Math.random() * categories[category].length);
     randomWord = categories[category][categoryIdx].split('');
     hint = hints[category][categoryIdx]
     console.log(hint)
     word = randomWord.map(letter => letter === ' ' ? `   ` : ' _ ')
     console.log(randomWord);
-
+  
     render()
 };
   
@@ -80,7 +79,6 @@ function render() {
   renderComments();
   spaceImg.src = `imgs/spaceman${lives}.jpg`
   guessWord.textContent = word.join('');
- 
 }
 
 function handleGuess(evt) {
@@ -102,8 +100,6 @@ function handleGuess(evt) {
 }
 
                                      
-
-
 function giveHint() { 
  hintEl.textContent = hint;
 };
