@@ -1,6 +1,7 @@
 * {
     font-family: 'Michroma', sans-serif;
     box-sizing: border-box;
+  
     
 }
 
@@ -10,10 +11,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
-    height: 100vh;
+    height: 100vh; 
     display: flex;  
     flex-direction: column;
-      
+    align-items: center;
+    width: 100vw;
+  
+}
+
+body > h2, h1 {
+  margin-bottom: 0;
+}
+
+body > h2 {
+  margin-top: 0;
 }
 
     button {
@@ -44,32 +55,31 @@ body {
   }
 
   #game-info {
-    height: 20vh;
+   
     display: flex;
     text-align: center;
   }
 
   #game-play {
-    height: 80vh; 
     display: flex;
-
   }
 
   #left-side {
     width: 30vw;
+    display:flex ;
+    justify-content: flex-end;
   }
 
   #right-side {
     width: 70vw;
     display: flex; 
     flex-direction: column;
-    grid-template-columns: repeat(5, 1fr);
   }
 
   #letters {
-    width: 30vw;
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr);
+flex-wrap: wrap;
+ display: flex;
+ width: 550px;
   }
 
   #hintsctn {
@@ -82,6 +92,7 @@ body {
 
   #hntsbutton {
     margin: 3px;
+    margin-top: 30px;
     background-color: white;
     color: #EFC01D;
     border: 1vmin solid #EFC01D;
@@ -101,7 +112,6 @@ body {
   }
 
    #spaceman { 
-    height: 50vh;
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;

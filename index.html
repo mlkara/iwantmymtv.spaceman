@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
     <title>IWantMyMTVSpaceman</title>
     <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
+    <h1>I Want my MTV Spaceman!</h1>
+    <h2>Guess a letter to the hidden word to solve the puzzle.</h2>
 
     <div id="game-info">
-        <h1>I Want my MTV Spaceman!</h1>
-        <h2>Guess a letter to the hidden word to solve the puzzle.</h2>
         <h2 id="comment"></h2>
-        <h2 >Games won:</h2>
-        <h2 >Games lost:</h2>
+        <!-- <h2>Games won:</h2>
+        <h2>Games lost:</h2> -->
     </div>
-    
-    <div id="game-play">
-        <div id="left-side">
-            <h1 id="decade">Choose your decade!</h1>
+
+    <h1 id="decade">Choose your decade!</h1>
             <select name="decade" id="decade">
                 <option value="seventies">Seventies</option>
                 <option value="eighties">Eighties</option>
@@ -32,59 +31,64 @@
                 <option value="aughts">Aughts</option>
                 <option value="tens">Tens</option>
             </select>
-          
-            <div id="letters">
-                <button>A</button>
-                <button>B</button>
-                <button>C</button>
-                <button>D</button>
-                <button>E</button>
-                <button>F</button>
-                <button>G</button>
-                <button>H</button>
-                <button>I</button>
-                <button>J</button>
-                <button>K</button>
-                <button>L</button>
-                <button>M</button>
-                <button>N</button>
-                <button>O</button>
-                <button>P</button>
-                <button>Q</button>
-                <button>R</button>
-                <button>S</button>
-                <button>T</button>
-                <button>U</button>
-                <button>V</button>
-                <button>W</button>
-                <button>X</button>
-                <button>Y</button>
-                <button>Z</button>
+
+    <div id="hintsctn">
+                <div id="hints">
+                    <button id="hntsbutton">HINT</button>
+                </div>
             </div>
+
+    <div id="game-play">
+        <div id="left-side">
+            
 
             
             <div id="spaceman">
-                <img src="" alt="" height = '250px'>
+                <img src="" alt="" height='200px'>
             </div>
 
             <div id="guessed-letters"></div>
             <div id="categories"></div>
         </div>
         <div id="right-side">
-            <div id="hintsctn">
-                <div id="hints">
-                <button id="hntsbutton">HINT</button>
-                 </div>
-             </div>
             
-                <div id="word">
-              
-            </div>
-           
+
+            
+
         </div>
 
     </div>
-
-    <button id="play-again">Play Again</button> 
+    <div id="word"></div>
+    <div id="letters">
+        <button>A</button>
+        <button>B</button>
+        <button>C</button>
+        <button>D</button>
+        <button>E</button>
+        <button>F</button>
+        <button>G</button>
+        <button>H</button>
+        <button>I</button>
+        <button>J</button>
+        <button>K</button>
+        <button>L</button>
+        <button>M</button>
+        <button>N</button>
+        <button>O</button>
+        <button>P</button>
+        <button>Q</button>
+        <button>R</button>
+        <button>S</button>
+        <button>T</button>
+        <button>U</button>
+        <button>V</button>
+        <button>W</button>
+        <button>X</button>
+        <button>Y</button>
+        <button>Z</button>
+    </div>
+    <button id="play-again">Play Again</button>
+    
 </body>
+
 </html>
