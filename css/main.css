@@ -127,5 +127,25 @@ flex-wrap: wrap;
     letter-spacing: <some measurement>;
    }
 
+   #play-again {
+    margin: 3px;
+    margin-top: 30px;
+    background-color: white;
+    color: #67BBBF;
+    border: 1vmin solid #67BBBF;
+    border-radius: 4vmin;
+    font-size: 15px;
+    outline: none;
+    font-weight: bold; 
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+   }
+
+   #play-again:hover {
+    background-color: #67BBBF;
+    color: white;
+
    
 

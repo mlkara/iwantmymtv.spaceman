@@ -91,7 +91,7 @@ function init(evt) {
 function render() {
   renderScores();
   renderComments();
-  spaceImg.src = `imgs/spaceman-${lives}.jpg`
+  spaceImg.src = `imgs/spaceman${lives}.jpg`
   guessWord.textContent = word.join('');
 }
 
