@@ -1,33 +1,31 @@
 * {
-    font-family: 'Michroma', sans-serif;
-    box-sizing: border-box;
-  
-    
+      font-family: 'Michroma', sans-serif;
+      box-sizing: border-box;  
 }
 
 body {
-    background: url("../imgs/iwantmymtvspaceman.png");  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: contain;
-    height: 100vh; 
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
+      background: url("../imgs/iwantmymtvspaceman.png");  
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-size: contain;
+      height: 100vh; 
+      display: flex;  
+      flex-direction: column;
+      align-items: center;
+      width: 100vw;
   
 }
 
 body > h2, h1 {
-  margin-bottom: 0;
+     margin-bottom: 0;
 }
 
 body > h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
-    button {
+  button {
     margin: 3px;
     background-color: white;
     color: #685F79;
@@ -77,9 +75,9 @@ body > h2 {
   }
 
   #letters {
-flex-wrap: wrap;
- display: flex;
- width: 550px;
+  flex-wrap: wrap;
+  display: flex;
+  width: 550px;
   }
 
   #hintsctn {
@@ -152,11 +150,11 @@ flex-wrap: wrap;
    }
 
    .wrongLetter {
-    background-color: red;
+    background-color: #67BBBF;
    }
 
    .rightLetter {
-    background-color: green;
+    background-color: #685F79;
    }
 
 
