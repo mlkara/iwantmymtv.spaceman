@@ -124,7 +124,6 @@ flex-wrap: wrap;
     font-weight: bold; 
     color: #EFC01D;
     font-size: 50px;
-    letter-spacing: <some measurement>;
    }
 
    #play-again {
@@ -146,6 +145,20 @@ flex-wrap: wrap;
    #play-again:hover {
     background-color: #67BBBF;
     color: white;
+   }
+
+   iframe {
+    margin-left: 5%;
+   }
+
+   .wrongLetter {
+    background-color: red;
+   }
+
+   .rightLetter {
+    background-color: green;
+   }
+
 
    
 

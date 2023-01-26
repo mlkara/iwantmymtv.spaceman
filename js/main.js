@@ -19,16 +19,16 @@ const hints = {
   mixTape: ['coming soon'],
 };
 
-// const songs = {
-//   seventies: ['https://embed.music.apple.com/us/album/heart-of-glass/1440929735?i=1440930363', 'https://embed.music.apple.com/us/album/changes/1039798000?i=1039798010', 'Glam rock band who influenced the Sex Pistols and Duran Duran', 'Band members include: Robert Plant, Jimmy Page, John Bonham, John Paul Jones', 'First rock opera was Tommy mostly written by Pete Townsend of this band.', 'This fab four was formed in Liverpool.', 'Named after a song by Muddy Water.', 'A prism is featured on their 1973 album.', 'A poet and influential component of the NYC punk rock movement. One of her songs was written by Bruce Springsteen and later covered by 10,000 maniacs in the 90s. ','Members of this LA band include: Joan Jett, Cherie Currie, Lita Ford, and Sandy West. ', 'Named for the fake hotel check in name, Paul Ramon, used by Paul McCartney', 'The lead singer accidentally sat on an open piano and laughed during the intro of Roxanne. The group liked it so much that not only did they leave it in, but they also gave him an additional credit for playing, butt piano. on the song.', 'Guitarist, singer, and principal songwriter for the rock band the Velvet Underground'],
-//   eighties: ['duran duran', 'the police', 'madonna', 'blondie', 'dexys midnight runners', 'inxs', 'modern english', 'prince',  
+    const songs = {
+    seventies: ['https://embed.music.apple.com/us/album/heart-of-glass/1440929735?i=1440930363', 'https://embed.music.apple.com/us/album/changes/1039798000?i=1039798010', 'Glam rock band who influenced the Sex Pistols and Duran Duran', 'Band members include: Robert Plant, Jimmy Page, John Bonham, John Paul Jones', 'First rock opera was Tommy mostly written by Pete Townsend of this band.', 'This fab four was formed in Liverpool.', 'Named after a song by Muddy Water.', 'A prism is featured on their 1973 album.', 'A poet and influential component of the NYC punk rock movement. One of her songs was written by Bruce Springsteen and later covered by 10,000 maniacs in the 90s. ','Members of this LA band include: Joan Jett, Cherie Currie, Lita Ford, and Sandy West. ', 'Named for the fake hotel check in name, Paul Ramon, used by Paul McCartney', 'The lead singer accidentally sat on an open piano and laughed during the intro of Roxanne. The group liked it so much that not only did they leave it in, but they also gave him an additional credit for playing, butt piano. on the song.', 'Guitarist, singer, and principal songwriter for the rock band the Velvet Underground'],
+  //  eighties: ['duran duran', 'the police', 'madonna', 'blondie', 'dexys midnight runners', 'inxs', 'modern english', 'prince',  
 //    'red hot chili peppers', 'rem', 'beastie boys', 'alanis morrisette', 'the ramones', 'david bowie', 'lou reed', 'patti smith', 'eurythmics', 'van halen', 'bon jovi', 'joan jett',  'pat benatar', 'the bangles', 'the buggles', 'elvis costello'],
 //   nineties: ['red hot chili peppers', 'https://embed.music.apple.com/us/album/black/425465247?i=425465351"', '<https://embed.music.apple.com/us/album/come-as-you-are/1440783617?i=1440783636', 'rem', 'tlc', 'no doubt', 'beck', 'green day', 'the cranberries', 'goo goo dolls', 'smashing pumpkins', 'alice in chains', 'hole', 'pixie', 'raidiohead', 'garbage','smash mouth', 'paul van dyk],
 //   aughts: ['the white stripes', 'the strokes', 'the killers', 'arcade fire', 'coldplay', 'kings of leon', 'modest mouse', 'vampire weekend', 'foo fighters', 'rihanna'],
 //   tens: ['twenty one pilots', 'florence and the machine', 'cage the elephant', 'mgmt', 'paramore', 'the lumineers', 'foster the people', 'the chainsmokers', 'gunship', 'odesza'],
 //   twenties: ['coming soon'],
 //   mixTape: ['coming soon'],
-//};
+};
   /*----- state variables -----*/
 let chosenCategory; 
 let hint;
@@ -39,6 +39,7 @@ let win;
 let answer = '';
 let renderLetters
 let word = null; 
+let music;
 
 
 
@@ -55,6 +56,8 @@ const guessWord = document.getElementById('word');
 const hintMessage = document.getElementById('hints');
 const winner = document.getElementById('win');
 const scores = document.getElementById('loss');
+const musicEl = document.querySelector('iframe');
+const parentEl = document.querySelectorAll('#letters > button');
 
 
 
@@ -84,18 +87,24 @@ function init(evt) {
     categoryIdx =  Math.floor(Math.random() * categories[category].length);
     randomWord = categories[category][categoryIdx].split('');
     hint = hints[category][categoryIdx]
+    music = songs[category][categoryIdx]
     console.log(hint)
     word = randomWord.map(letter => letter === ' ' ? ' ' : ' _ ')
     console.log(randomWord);
-  
+    
+    console.log(music);
+
     render()
 };
   
 function render() {
+  musicEl.style.visibility = win ? "visible": 'hidden'
   renderScores();
   renderComments();
+  renderBtns();
   spaceImg.src = `imgs/spaceman${lives}.jpg`
   guessWord.textContent = word.join('');
+  
 }
 
 function handleGuess(evt) {
@@ -136,10 +145,30 @@ function checkWinner() {
 function renderComments() {
   if (win === 'w')  {
     commentEl.innerHTML = "You Win!";
+    musicEl.src = music; 
   } else if (win === 'l') {
     commentEl.innerHTML = "Game Over";
+    musicEl.src = music; 
   } else {
     commentEl.innerHTML = "You have " + lives + " lives";
   }
 }
+
+function renderBtns() {
+  
+  parentEl.forEach(function(letter) {
+    console.log(letter)
+    if (guesses.includes(letter.textContent.toLowerCase())) {
+      letter.classList.add('wrongLetter')
+      console.log(letter)
+    } else if (word.includes(letter.textContent.toLowerCase())) {
+      letter.classList.add('rightLetter')
+      console.log(letter)
+    } else {
+      // letter.classList.add(' ')
+    }
+  })
+  // render;
+}
+
 
