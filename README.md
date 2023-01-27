@@ -30,7 +30,7 @@
   <img src="https://i.imgur.com/vkEGHSl.jpg" width="700">
     
  
-  <h3 align="center">Winning Page</h3>  
+  <h3>Winning Page</h3>  
   <img src="https://i.imgur.com/0BEQ8e1.jpg" width="700">
     
  
@@ -44,7 +44,7 @@
 
 <details open>
   <summary> How to Play</summary>
-    1. Select your chosen decade. 
+    1. Select a decade. 
     2. Click on the alphabet buttons to select your letter to begin guessing. 
     3. Click on the hint button, if one is needed. 
 </details>
