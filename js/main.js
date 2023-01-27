@@ -24,10 +24,8 @@ const songs = {
   eighties: ['https://embed.music.apple.com/us/album/the-reflex/696450569?i=696450584', 'https://embed.music.apple.com/us/album/every-breath-you-take/1440673959?i=1440674160', 'https://embed.music.apple.com/us/album/express-yourself/83448003?i=83446230', 'https://embed.music.apple.com/us/album/come-on-eileen-single-edit/1445280543?i=1445280544', 'https://embed.music.apple.com/us/album/need-you-tonight-2017-remaster/1614037635?i=1614037653', 'https://embed.music.apple.com/us/album/i-melt-with-you/1452734901?i=1452735552', 'https://embed.music.apple.com/us/album/when-doves-cry/1545704089?i=1545704094',  
   ,'https://embed.music.apple.com/us/album/blitzkrieg-bop/1127410202?i=1127410268', 'https://embed.music.apple.com/us/album/sweet-dreams-are-made-of-this/303097824?i=303097827', 'https://embed.music.apple.com/us/album/jump/976831013?i=976832495', 'https://embed.music.apple.com/us/album/wanted-dead-or-alive/1422954626?i=1422955215', 'https://embed.music.apple.com/us/album/i-love-rock-n-roll-with-steve-jones-paul-cook/1436362781?i=1436362806',  'https://embed.music.apple.com/us/album/love-is-a-battlefield/724157242?i=724157493', 'https://embed.music.apple.com/us/album/walk-like-an-egyptian/185868471?i=185868578', 'https://embed.music.apple.com/us/album/video-killed-the-radio-star/1444090125?i=1444090128','https://embed.music.apple.com/us/album/where-is-my-mind/1027465077?i=1027465608'],
   nineties: ['https://embed.music.apple.com/us/album/under-the-bridge/947701030?i=947701032', 'https://embed.music.apple.com/us/album/black/425465247?i=425465351"', '<https://embed.music.apple.com/us/album/come-as-you-are/1440783617?i=1440783636', 'https://embed.music.apple.com/us/album/losing-my-religion/1442996327?i=1442996689', 'https://embed.music.apple.com/us/album/waterfalls/270246704?i=270246724', 'https://embed.music.apple.com/us/album/spiderwebs/1440845400?i=1440845406', 'https://embed.music.apple.com/us/album/loser/1440636547?i=1440636710', 'https://embed.music.apple.com/us/album/basket-case/1160081985?i=1160082180', 'https://embed.music.apple.com/us/album/linger/1440735255?i=1440735263', 'https://embed.music.apple.com/us/album/iris/267536485?i=267537169', 'https://embed.music.apple.com/us/album/1979/721224313?i=721224621', 'https://embed.music.apple.com/us/album/would-2022-remaster/157316517?i=157317248', 'https://embed.music.apple.com/us/album/miss-world/1445732603?i=1445732609', 'https://embed.music.apple.com/us/album/creep/1097862062?i=1097862231', 'https://embed.music.apple.com/us/album/only-happy-when-it-rains/1440827138?i=1440827326','https://embed.music.apple.com/us/album/all-star/1440915299?i=1440915693', 'https://embed.music.apple.com/us/album/for-an-angel/1463197954?i=1463197973', 'https://embed.music.apple.com/us/album/sabotage/724771323?i=724771987'],
-  aughts: ['https://embed.music.apple.com/us/album/seven-nation-army/1533513536?i=1533513537', 'the strokes', 'the killers', 'arcade fire', 'coldplay', 'kings of leon', 'modest mouse', 'vampire weekend', 'foo fighters', 'rihanna'],
-//   tens: ['twenty one pilots', 'florence and the machine', 'cage the elephant', 'mgmt', 'paramore', 'the lumineers', 'foster the people', 'the chainsmokers', 'gunship', 'odesza'],
-//   twenties: ['coming soon'],
-//   mixTape: ['coming soon'],
+  aughts: ['https://embed.music.apple.com/us/album/seven-nation-army/1533513536?i=1533513537', 'https://embed.music.apple.com/us/album/last-nite/266376953?i=266377010', 'https://embed.music.apple.com/us/album/mr-brightside/1440891166?i=1440891171', 'https://embed.music.apple.com/us/album/wake-up/1249417623?i=1249418625', 'https://embed.music.apple.com/us/album/yellow/1122782080?i=1122782283', 'https://embed.music.apple.com/us/album/sex-on-fire/290302885?i=290303003', 'https://embed.music.apple.com/us/album/float-on/201257412?i=201257515', 'https://embed.music.apple.com/us/album/oxford-comma/270425072?i=270425147', 'https://embed.music.apple.com/us/album/learn-to-fly/334811953?i=334812018', 'https://embed.music.apple.com/us/album/only-girl-in-the-world/1440808164?i=1440808179'],
+  tens: ['https://embed.music.apple.com/us/album/stressed-out/974485462?i=974485474', 'https://embed.music.apple.com/us/album/dog-days-are-over/1440729743?i=1440729744', 'https://embed.music.apple.com/us/album/cigarette-daydreams/683346293?i=683346502', 'https://embed.music.apple.com/us/album/pursuit-of-happiness-nightmare-feat-mgmt-ratatat/1472484829?i=1472484938', 'https://embed.music.apple.com/us/album/aint-it-fun/593146366?i=593148438', 'https://embed.music.apple.com/us/album/ophelia/1072936167?i=1072936172', 'https://embed.music.apple.com/us/album/pumped-up-kicks/435761204?i=435761212', 'https://embed.music.apple.com/us/album/closer-feat-halsey/1170699510?i=1170699703', 'https://embed.music.apple.com/us/album/fly-for-your-life-instrumental/1512317611?i=1512317986', 'https://embed.music.apple.com/us/album/say-my-name-feat-zyra/897564246?i=897564278'],
 };
   /*----- state variables -----*/
 let chosenCategory; 
@@ -37,7 +35,7 @@ let lives;
 let guesses;
 let win; 
 let answer = '';
-let renderLetters
+let renderLetters;
 let word = null; 
 let music;
 
@@ -77,32 +75,30 @@ const parentEl = document.querySelectorAll('#letters > button');
     
 
 function init(evt) {
-    guesses = [ ];
-    wrongLetters = [ ];
-    lives = 6;
-    win = null; 
-    loss = null; 
-    hintEl.textContent = 'HINT';
-    category = categorySelect.value || 'seventies';
-    categoryIdx =  Math.floor(Math.random() * categories[category].length);
-    randomWord = categories[category][categoryIdx].split('');
-    hint = hints[category][categoryIdx]
-    music = songs[category][categoryIdx]
-
-    word = randomWord.map(letter => letter === ' ' ? ' ' : ' _ ')
-  
-    render()
+  guesses = [ ];
+  wrongLetters = [ ];
+  lives = 6;
+  win = null; 
+  loss = null; 
+  hintEl.textContent = 'HINT';
+  category = categorySelect.value || 'seventies';
+  categoryIdx =  Math.floor(Math.random() * categories[category].length);
+  randomWord = categories[category][categoryIdx].split('');
+  hint = hints[category][categoryIdx];
+  music = songs[category][categoryIdx];
+  word = randomWord.map(letter => letter === ' ' ? ' ' : ' _ ');
+  render();
 };
   
 function render() {
-  musicEl.style.visibility = win ? "visible": 'hidden'
+  musicEl.style.visibility = win ? "visible": 'hidden';
   renderScores();
   renderComments();
   renderBtns();
-  spaceImg.src = `imgs/spaceman${lives}.jpg`
+  spaceImg.src = `imgs/spaceman${lives}.jpg`;
   guessWord.textContent = word.join('');
   
-}
+};
 
 function handleGuess(evt) {
   const guess = evt.target.innerHTML.toLowerCase();
@@ -110,14 +106,13 @@ function handleGuess(evt) {
   if (randomWord.includes(guess)) {
     randomWord.forEach(function(char, idx){
       if (char === guess) word[idx] = guess;
-    })
+      })
     if (randomWord.join('') === word.join('')) win = 'w'
   } else {
     guesses.push(guess);
     lives = lives - 1; 
     if (lives === 0) win = 'l'
   }
-  
   render();
 }
 
@@ -127,7 +122,6 @@ function giveHint() {
 };
 
 function renderScores() {
-
     }
 
 function setCategory(evt) {
@@ -150,9 +144,7 @@ function renderComments() {
 }
 
 function renderBtns() {
-  
   parentEl.forEach(function(letter) {
-    
     if (guesses.includes(letter.textContent.toLowerCase())) {
       letter.classList.add('wrongLetter')
     } else if (word.includes(letter.textContent.toLowerCase())) {
