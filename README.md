@@ -21,7 +21,7 @@
 
   I Want My MTV Spaceman
 
-  Whether it is nostalgia, the love of music, or the playing puzzles. I Want My MTV Spaceman is a game in which the object is for one player to guess the letters of an unknown music artist. With each incorrect guess, a piece of the spaceman disappears. 
+  Whether it is nostalgia, the love of music, or the playing puzzles. I Want My MTV Spaceman is a game in which the object is for one player to guess the letters of the random musician. With each incorrect guess, a piece of the spaceman disappears. 
 
   </div>
 
@@ -30,12 +30,12 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Feed Page</h3> | <img
-    src="https://i.imgur.com/vkEGHSl.jpg)"
+    src="https://i.imgur.com/vkEGHSl.jpg"
     width="700"
   /> |
   | <h3 align="center">Profile Page</h3> | <img
-  src="https://i.imgur.com/tcg4HMx.png"
-  width="700"
+    src="https://i.imgur.com/o2JInSX.png"
+    width="700"
   /> |
 
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
