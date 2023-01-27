@@ -29,12 +29,12 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Feed Page</h3> | 
-    <img src="https://imgur.com/vkEGHSl">
-    width="700"
+  <img src="https://i.imgur.com/xlwaFw7.png" width="700">
+    
   /> |
   | <h3 align="center">Profile Page</h3> | 
-    <img src="https://imgur.com/0BEQ8e1">
-    width="700"
+  <img src="https://i.imgur.com/xlwaFw7.png" width="700">
+    
   /> |
 
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)

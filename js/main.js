@@ -57,23 +57,16 @@ const scores = document.getElementById('loss');
 const musicEl = document.querySelector('iframe');
 const parentEl = document.querySelectorAll('#letters > button');
 
-
-
-
-
-
   /*----- event listeners -----*/
-  btnEls.addEventListener('click', handleGuess);
-  hintEl.addEventListener('click', giveHint);
-  catEls.addEventListener('click', setCategory);
-  playAgainBtn.addEventListener('click', init);
-  categorySelect.addEventListener('change', init);
-
+btnEls.addEventListener('click', handleGuess);
+hintEl.addEventListener('click', giveHint);
+catEls.addEventListener('click', setCategory);
+playAgainBtn.addEventListener('click', init);
+categorySelect.addEventListener('change', init);
 
   /*----- functions -----*/
-  init();
+init();
     
-
 function init(evt) {
   guesses = [ ];
   wrongLetters = [ ];
@@ -96,8 +89,7 @@ function render() {
   renderComments();
   renderBtns();
   spaceImg.src = `imgs/spaceman${lives}.jpg`;
-  guessWord.textContent = word.join('');
-  
+  guessWord.textContent = word.join(''); 
 };
 
 function handleGuess(evt) {
