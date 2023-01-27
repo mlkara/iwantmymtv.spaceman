@@ -29,12 +29,12 @@
 
   |   Description | Screenshot | 
   |:-------------:| -----------|
-  | <h3>Feed Page</h3> | <img
-    src="https://imgur.com/vkEGHSl"
+  | <h3>Feed Page</h3> | 
+    <img src="https://imgur.com/vkEGHSl"
     width="700"
   /> |
-  | <h3 align="center">Profile Page</h3> | <img
-    src="https://imgur.com/0BEQ8e1"
+  | <h3 align="center">Profile Page</h3> | 
+    <img src="https://imgur.com/0BEQ8e1"
     width="700"
   /> |
 
