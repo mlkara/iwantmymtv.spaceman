@@ -54,14 +54,21 @@
 
 
 <details open>
-  <summary> Trello Board </summary>
-  <a href="https://trello.com/b/x4ViComX/meet-your-classmates-project-4"
-    > https://trello.com/b/x4ViComX/meet-your-classmates-project-4 </a
+  <summary> Pseudocode </summary>
+  <a href="https://i.imgur.com/yZT45OE.png"
+    > https://i.imgur.com/yZT45OE.png </a
   >
 </details>
 
 <details open>
-  <summary> Deployed Link (Heroku) </summary>
+  <summary> Wireframe </summary>
+  <a href="https://i.imgur.com/o2JInSX.png"
+    > https://i.imgur.com/o2JInSX.png </a
+  >
+</details>
+
+<details open>
+  <summary> Deployed Link </summary>
   <a href="https://mlkara.github.io/iwantmymtv.spaceman/"
     > https://mlkara.github.io/iwantmymtv.spaceman/ 
     </a>
