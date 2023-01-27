@@ -45,7 +45,7 @@ let music;
 const hintEl = document.getElementById('hntsbutton');
 const btnEls = document.getElementById('letters');
 const catEls = document.getElementById('categories');
-const playAgainBtn = document.getElementById('play-again');
+// const playAgainBtn = document.getElementById('play-again');
 const commentEl = document.getElementById('comment');
 const spaceImg = document.querySelector('img');
 const rndWord = document.getElementById('word');
@@ -61,8 +61,9 @@ const parentEl = document.querySelectorAll('#letters > button');
 btnEls.addEventListener('click', handleGuess);
 hintEl.addEventListener('click', giveHint);
 catEls.addEventListener('click', setCategory);
-playAgainBtn.addEventListener('click', init);
+// playAgainBtn.addEventListener('click', init);
 categorySelect.addEventListener('change', init);
+document.querySelector('#play-again').addEventListener('click', init);
 
   /*----- functions -----*/
 init();
@@ -80,6 +81,7 @@ function init(evt) {
   hint = hints[category][categoryIdx];
   music = songs[category][categoryIdx];
   word = randomWord.map(letter => letter === ' ' ? ' ' : ' _ ');
+  resetBtns();
   render();
 };
   
@@ -145,5 +147,13 @@ function renderBtns() {
     };
   });
 }
+
+function resetBtns() {
+  parentEl.forEach(function(letter) {
+      letter.classList.remove('wrongLetter')
+      letter.classList.remove('rightLetter')
+    }
+  )}; 
+
 
 
