@@ -15,7 +15,6 @@
 
   ##### Monica Karasek
 
-  [![LinkedIn Badge](https://img.shields.io/badge/-@monica-karasek-blue?style=flat&logo=Linkedin&logoColor=black)](www.linkedin.com/in/monica-karasek)
 
   ## :pencil: Description
 
@@ -30,11 +29,11 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Feed Page</h3> | 
-    <img src="https://imgur.com/vkEGHSl"
+    <img src="https://imgur.com/vkEGHSl">
     width="700"
   /> |
   | <h3 align="center">Profile Page</h3> | 
-    <img src="https://imgur.com/0BEQ8e1"
+    <img src="https://imgur.com/0BEQ8e1">
     width="700"
   /> |
 
