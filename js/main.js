@@ -7,7 +7,7 @@ const categories = {
   aughts: ['the white stripes', 'the strokes', 'the killers', 'arcade fire', 'coldplay', 'kings of leon', 'modest mouse', 'vampire weekend', 'foo fighters', 'rihanna'],
   tens: ['twenty one pilots', 'florence and the machine', 'cage the elephant', 'mgmt', 'paramore', 'the lumineers', 'foster the people', 'the chainsmokers', 'gunship', 'odesza'],
   mixtape: ['the kinks', 'the doors', 'daft punk', 'frou frou'],
-}
+};
 
 const hints = {
   seventies: ['Their song, Call Me, was on the film soundtrack of American Giglo(1980)', 'His alter ego in 1972 was Ziggy Stardust', 'Glam rock band who influenced the Sex Pistols and Duran Duran', 'Band members include: Robert Plant, Jimmy Page, John Bonham, John Paul Jones', 'First rock opera was Tommy mostly written by Pete Townsend of this band.', 'This fab four was formed in Liverpool.', 'Named after a song by Muddy Water.', 'A prism is featured on their 1973 album.', 'A poet and influential component of the NYC punk rock movement. One of her songs was written by Bruce Springsteen and later covered by 10,000 maniacs in the 90s. ','Members of this LA band include: Joan Jett, Cherie Currie, Lita Ford, and Sandy West. ', 'Named for the fake hotel check in name, Paul Ramon, used by Paul McCartney', 'The lead singer accidentally sat on an open piano and laughed during the intro of Roxanne. The group liked it so much that not only did they leave it in, but they also gave him an additional credit for playing, butt piano. on the song.', 'Guitarist, singer, and principal songwriter for the rock band the Velvet Underground'],
@@ -28,6 +28,7 @@ const songs = {
   tens: ['https://embed.music.apple.com/us/album/stressed-out/974485462?i=974485474', 'https://embed.music.apple.com/us/album/dog-days-are-over/1440729743?i=1440729744', 'https://embed.music.apple.com/us/album/cigarette-daydreams/683346293?i=683346502', 'https://embed.music.apple.com/us/album/pursuit-of-happiness-nightmare-feat-mgmt-ratatat/1472484829?i=1472484938', 'https://embed.music.apple.com/us/album/aint-it-fun/593146366?i=593148438', 'https://embed.music.apple.com/us/album/ophelia/1072936167?i=1072936172', 'https://embed.music.apple.com/us/album/pumped-up-kicks/435761204?i=435761212', 'https://embed.music.apple.com/us/album/closer-feat-halsey/1170699510?i=1170699703', 'https://embed.music.apple.com/us/album/fly-for-your-life-instrumental/1512317611?i=1512317986', 'https://embed.music.apple.com/us/album/say-my-name-feat-zyra/897564246?i=897564278'],
   mixtape: ["https://embed.music.apple.com/us/album/lola/1361966578?i=1361966870", 'https://embed.music.apple.com/us/album/people-are-strange/640047463?i=640047588', 'https://embed.music.apple.com/us/album/starboy-feat-daft-punk/1440871397?i=1440871420', 'https://embed.music.apple.com/us/album/let-go/1440927446?i=1440927448'],
 };
+
   /*----- state variables -----*/
 let chosenCategory; 
 let hint;
@@ -40,13 +41,10 @@ let renderLetters;
 let word = null; 
 let music;
 
-
-
   /*----- cached elements  -----*/
 const hintEl = document.getElementById('hntsbutton');
 const btnEls = document.getElementById('letters');
 const catEls = document.getElementById('categories');
-// const playAgainBtn = document.getElementById('play-again');
 const commentEl = document.getElementById('comment');
 const spaceImg = document.querySelector('img');
 const rndWord = document.getElementById('word');
@@ -62,7 +60,6 @@ const parentEl = document.querySelectorAll('#letters > button');
 btnEls.addEventListener('click', handleGuess);
 hintEl.addEventListener('click', giveHint);
 catEls.addEventListener('click', setCategory);
-// playAgainBtn.addEventListener('click', init);
 categorySelect.addEventListener('change', init);
 document.querySelector('#play-again').addEventListener('click', init);
 
