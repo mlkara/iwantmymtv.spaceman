@@ -98,12 +98,12 @@ function handleGuess(evt) {
   if (randomWord.includes(guess)) {
     randomWord.forEach(function(char, idx){
       if (char === guess) word[idx] = guess;
-      })
-    if (randomWord.join('') === word.join('')) win = 'w'
+      });
+    if (randomWord.join('') === word.join('')) win = 'w';
   } else {
     guesses.push(guess);
     lives = lives - 1; 
-    if (lives === 0) win = 'l'
+    if (lives === 0) win = 'l';
   }
   render();
 }
@@ -117,7 +117,7 @@ function renderScores() {
     }
 
 function setCategory(evt) {
- chosenCategory = evt.target.id 
+ chosenCategory = evt.target.id; 
 }
 
 function checkWinner() {
@@ -132,24 +132,24 @@ function renderComments() {
     musicEl.src = music; 
   } else {
     commentEl.innerHTML = "You have " + lives + " lives";
-  }
-}
+  };
+};
 
 function renderBtns() {
   parentEl.forEach(function(letter) {
     if (guesses.includes(letter.textContent.toLowerCase())) {
-      letter.classList.add('wrongLetter')
+      letter.classList.add('wrongLetter');
     } else if (word.includes(letter.textContent.toLowerCase())) {
-      letter.classList.add('rightLetter')
+      letter.classList.add('rightLetter');
     } else {
     };
   });
-}
+};
 
 function resetBtns() {
   parentEl.forEach(function(letter) {
-      letter.classList.remove('wrongLetter')
-      letter.classList.remove('rightLetter')
+      letter.classList.remove('wrongLetter');
+      letter.classList.remove('rightLetter');
     }
   )}; 
 
