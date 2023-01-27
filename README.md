@@ -26,16 +26,14 @@
 
     ## :camera_flash: Screenshots 
 
-  |   Description | Screenshot | 
-  |:-------------:| -----------|
-  | <h3>Feed Page</h3> | 
+  <h3>Main Page</h3>  
   <img src="https://i.imgur.com/vkEGHSl.jpg" width="700">
     
-  /> |
-  | <h3 align="center">Profile Page</h3> | 
+ 
+  <h3 align="center">Winning Page</h3>  
   <img src="https://i.imgur.com/0BEQ8e1.jpg" width="700">
     
-  /> |
+ 
 
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
