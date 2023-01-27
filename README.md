@@ -29,11 +29,11 @@
   |   Description | Screenshot | 
   |:-------------:| -----------|
   | <h3>Feed Page</h3> | 
-  <img src="https://i.imgur.com/xlwaFw7.png" width="700">
+  <img src="https://i.imgur.com/vkEGHSl.jpg" width="700">
     
   /> |
   | <h3 align="center">Profile Page</h3> | 
-  <img src="https://i.imgur.com/xlwaFw7.png" width="700">
+  <img src="https://i.imgur.com/0BEQ8e1.jpg" width="700">
     
   /> |
 
